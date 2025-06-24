@@ -1,3 +1,3 @@
 alert(
-  "This is to confirm if this script is working correctly. Another alert will follow."
+  "Backdoor loaded successfully! This is a test alert to confirm the script is running."
 );
