@@ -1,0 +1,13 @@
+name: Purge jsDelivr cache
+on:                         # run on every push to main
+  push:
+    branches: [main]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge CDN
+        uses: gacts/purge-jsdelivr-cache@v1     # tiny wrapper around jsDelivr API
+        with:
+          url: https://cdn.jsdelivr.net/gh/Dprof-code/web-script@main/script.js
